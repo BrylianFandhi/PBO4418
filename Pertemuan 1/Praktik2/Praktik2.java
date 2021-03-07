@@ -2,6 +2,10 @@ import java.io.*;
 import java.io.BufferedReader;
 import java.util.Scanner;
 
+/* Nama	: Brylian Fandhi safsalta
+	NIM	: A11.2019.12169
+	Kelompok : A11.4418 */
+
 public class Praktik2 {
     public static void main(String[] args){
         TV tv1 = new TV();
