@@ -1,3 +1,7 @@
+/* Nama	: Brylian Fandhi safsalta
+	NIM	: A11.2019.12169
+	Kelompok : A11.4418 */
+
 class TestSimpleCircle{
     public static void main(String[] args){
         SimpleCircle circle1=new SimpleCircle();
