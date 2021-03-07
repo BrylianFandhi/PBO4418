@@ -1,5 +1,9 @@
 import java.io.*;
 
+/* Nama	: Brylian Fandhi safsalta
+	NIM	: A11.2019.12169
+	Kelompok : A11.4418 */
+
 public class Praktik1 {
    public static void main(String args[]) throws IOException {
       InputStreamReader cin = null;
