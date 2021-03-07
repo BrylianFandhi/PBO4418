@@ -5,12 +5,12 @@ public class Praktik1 {
       InputStreamReader cin = null;
       try {
          cin = new InputStreamReader(System.in);
-         System.out.println("Enter characters, 'q' to quit.");
+         System.out.println("Enter characters, 'u' to quit.");
          char c;
          do {
             c = (char) cin.read();
             System.out.print(c);
-         } while(c != 'q');
+         } while(c != 'u');
       }finally {
          if (cin != null) {
             cin.close();
