@@ -13,7 +13,9 @@ Atribut:
 - Tahun produksi
 
 Behaviour:
-- Jalan ke depan
+- Cara Maju
+- Cara Mundur
+- Cara kayuh
 - Jalan cepat
 - Jalan lambat
 - Gear up
