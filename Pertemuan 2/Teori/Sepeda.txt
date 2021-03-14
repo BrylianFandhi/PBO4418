@@ -1,0 +1,23 @@
+Nama	: Brylian Fandhi safsalta
+NIM	    : A11.2019.12169
+Kelompok : A11.4418
+
+Objek: Sepeda
+
+Atribut:
+- Jenis: lipat ,MTB, road bike, sepeda listrik
+- Merk
+- Warna
+- Grupset
+- Bahan sepeda
+- Tahun produksi
+
+Behaviour:
+- Jalan ke depan
+- Jalan cepat
+- Jalan lambat
+- Gear up
+- Gear down
+- Belok kanan
+- Belok kiri
+- Cara wheelie
