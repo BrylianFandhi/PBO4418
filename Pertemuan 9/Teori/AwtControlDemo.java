@@ -35,6 +35,7 @@ public class AwtControlDemo{
     private void showEventDemo(){
         headerLabel.setText("Control in action: Button");
 
+        // Berguna sebagai penampilan tombol dan dapat melakukan aksi dari klik tombol tersebut
         Button okButton = new Button("OK");
         Button submitButton = new Button("Submit");
         Button cancelButton = new Button("Cancel");
@@ -51,7 +52,7 @@ public class AwtControlDemo{
         controlPanel.add(submitButton);
         controlPanel.add(cancelButton);
 
-
+        // Pembuatan pemilihan suatu data atau benda dan dapat di submit atau tampil
         final Choice fruitChoice = new Choice();
 
       fruitChoice.add("Mangga");
@@ -70,6 +71,8 @@ public class AwtControlDemo{
 
       controlPanel.add(fruitChoice);
       controlPanel.add(showButton);
+    
+    //Pembuatan tampilan menu di bagian atas
 
         //create a menu bar
       final MenuBar menuBar = new MenuBar();
@@ -144,19 +147,14 @@ public class AwtControlDemo{
 
       //add menubar to the frame
       mainFrame.setMenuBar(menuBar);
-      mainFrame.setVisible(true);  
-
-      
+      mainFrame.setVisible(true);       
    }
     
-    
-
     public static void main(String[] args){
         AwtControlDemo demo = new AwtControlDemo();
         demo.prepareGUI();
         demo.showEventDemo();
     }
-
 
     public class ButtonClickListener implements ActionListener{
         public void actionPerformed(ActionEvent e) {
@@ -170,7 +168,6 @@ public class AwtControlDemo{
             }else if(command.equals("cancel")) {
                 statusLabel.setText("Cancel Button terklik.");
             }
-        }
-        
+        }   
     }
 }
