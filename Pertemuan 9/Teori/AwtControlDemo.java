@@ -1,6 +1,10 @@
 import java.awt.*;
 import java.awt.event.*;
 
+/*  Nama    : Brylian Fandhi Safsalta
+    NIM     : A11.2019.12169
+    Kelompok: A11.4418 */
+
 public class AwtControlDemo{
     //Property 
     private Frame mainFrame;
