@@ -24,7 +24,7 @@ public class TabelModelMahasiswa extends AbstractTableModel{
     }
 
     public int getRowCount() {
-        return lb.size(); //To change body of generated methods, choose Tools | Templates.
+        return this.lb.size(); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getColumnName(int column){

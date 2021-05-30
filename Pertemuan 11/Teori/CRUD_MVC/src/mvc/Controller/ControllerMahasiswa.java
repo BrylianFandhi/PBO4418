@@ -29,6 +29,8 @@ public class ControllerMahasiswa {
     }
     
     public void reset(){
+        if(frame.getTxtID().isEnabled())
+            frame.getTxtID().setEditable(true);
         frame.getTxtID().setText("");
         frame.getTxtNim().setText("");
         frame.getTxtNama().setText("");
@@ -43,7 +45,9 @@ public class ControllerMahasiswa {
     }
     
     public void isiField(int row){
-        frame.getTxtID().setText(lb.get(row).getId().toString());
+        frame.getTxtID().setEditable(false);
+        String s=String.valueOf(lb.get(row).getId());
+        frame.getTxtID().setText(s);
         frame.getTxtNim().setText(lb.get(row).getNim());
         frame.getTxtNama().setText(lb.get(row).getNama());
         frame.getTxtJk().setSelectedItem(lb.get(row).getJk());
@@ -58,8 +62,12 @@ public class ControllerMahasiswa {
             b.setNama(frame.getTxtNama().getText());
             b.setJk(frame.getTxtJk().getSelectedItem().toString());
             b.setAlamat(frame.getTxtAlamat().getText());
-            implMahasiswa.insert(b);
-            JOptionPane.showMessageDialog(null, "Simpan data sukses");            
+            boolean res = implMahasiswa.insert(b);
+            if (res)
+                JOptionPane.showMessageDialog(null, "Simpan data sukses");   
+            else
+                JOptionPane.showMessageDialog(null, "GAGAL INSERT DATA\nKarena ID yang diinputkan sudah dipakai");
+            
         } else{
             JOptionPane.showMessageDialog(frame,"Data Tidak Boleh Kosong");
         }

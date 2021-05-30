@@ -264,7 +264,7 @@ public class FormMahasiswa extends javax.swing.JFrame {
                     .addComponent(buttonUpdate)
                     .addComponent(buttonDelete)
                     .addComponent(buttonReset))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -293,14 +293,14 @@ public class FormMahasiswa extends javax.swing.JFrame {
 
     private void buttonUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonUpdateActionPerformed
         // TODO add your handling code here:
-        cbt.insert();
+        cbt.update();
         cbt.isiTable();
         cbt.reset();
     }//GEN-LAST:event_buttonUpdateActionPerformed
 
     private void buttonDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDeleteActionPerformed
         // TODO add your handling code here:
-        cbt.insert();
+        cbt.delete();
         cbt.isiTable();
         cbt.reset();
     }//GEN-LAST:event_buttonDeleteActionPerformed
@@ -312,7 +312,8 @@ public class FormMahasiswa extends javax.swing.JFrame {
 
     private void buttonCariNamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCariNamaActionPerformed
         // TODO add your handling code here:
-        cbt.carinama();
+        cbt.isiTableCariNama();
+        cbt.reset();
     }//GEN-LAST:event_buttonCariNamaActionPerformed
 
     private void tabelDataMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelDataMouseClicked

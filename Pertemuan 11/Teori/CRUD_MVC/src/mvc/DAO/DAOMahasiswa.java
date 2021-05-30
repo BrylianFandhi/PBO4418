@@ -24,9 +24,9 @@ import java.util.logging.Logger;
 public class DAOMahasiswa implements IMahasiswa{
     Connection connection;
     final String insert = "INSERT INTO tblmahasiswa (id, nim, nama, jk, alamat) VALUES (?, ?, ?, ?, ?);";
-    final String update = "UPDATE tblmahasiswa set id=?, nim=?, nama=?, jk=?, alamat=? where id=?;";
+    final String update = "UPDATE tblmahasiswa set nim=?, nama=?, jk=?, alamat=? where id=?;";
     final String delete = "DELETE FROM tblmahasiswa where id=?;";
-    final String select = "SELECT * FROM tblmahasiswa;";
+    final String select = "SELECT * FROM tblmahasiswa order by id asc;";
     final String carinama = "SELECT * FROM tblmahasiswa where nama like ?";
     
     public DAOMahasiswa(){
@@ -34,7 +34,8 @@ public class DAOMahasiswa implements IMahasiswa{
     }
 
     @Override
-    public void insert(Mahasiswa b) {
+    public boolean insert(Mahasiswa b) {
+        boolean result = true;
         PreparedStatement statement = null;
         try{
             statement = connection.prepareStatement(insert);
@@ -44,19 +45,22 @@ public class DAOMahasiswa implements IMahasiswa{
             statement.setString(4, b.getJk());
             statement.setString(5, b.getAlamat());
             statement.executeUpdate();
-            ResultSet rs = statement.getGeneratedKeys();
-            while (rs.next()){
-                b.setId(rs.getInt(1));
-            }
+//            ResultSet rs = statement.getGeneratedKeys();
+//            while (rs.next()){
+//                b.setId(rs.getInt(1));
+//            }
         } catch (SQLException ex){
             System.out.println("Berhasil Input");
+            result = false;
         } finally{
             try {
                 statement.close();
             } catch(SQLException ex){
                 System.out.println("Gagal Input");
+                result = false;
             }
         }
+        return result;
     }
 
     @Override
