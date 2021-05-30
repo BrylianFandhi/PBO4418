@@ -34,6 +34,9 @@ public class FormMenu extends javax.swing.JFrame {
 
         jPanel1.setPreferredSize(new java.awt.Dimension(564, 300));
 
+        Ke_CekBerat.setBackground(new java.awt.Color(0, 0, 240));
+        Ke_CekBerat.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        Ke_CekBerat.setForeground(new java.awt.Color(240, 240, 240));
         Ke_CekBerat.setText("Cek Berat");
         Ke_CekBerat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -41,6 +44,9 @@ public class FormMenu extends javax.swing.JFrame {
             }
         });
 
+        Exit.setBackground(new java.awt.Color(240, 0, 0));
+        Exit.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        Exit.setForeground(new java.awt.Color(240, 240, 240));
         Exit.setText("Exit");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,11 +59,11 @@ public class FormMenu extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(72, 72, 72)
+                .addGap(89, 89, 89)
                 .addComponent(Ke_CekBerat, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
                 .addComponent(Exit, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(114, 114, 114))
+                .addGap(76, 76, 76))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
