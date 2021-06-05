@@ -86,7 +86,7 @@ public class User extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setText("NIK/KTP");
+        jLabel2.setText("No NIK/KTP");
 
         jLabel3.setText("Nama");
 
