@@ -114,7 +114,7 @@ public class Admin extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(245, 245, 245));
+        jPanel2.setBackground(new java.awt.Color(229, 242, 208));
 
         jPanel4.setBackground(new java.awt.Color(206, 224, 242));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -478,7 +478,6 @@ public class Admin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
